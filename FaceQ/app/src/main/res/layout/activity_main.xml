@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_bg"
+    tools:context="com.sysu.edgar.faceq.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:textOff=""
+                    android:textOn=""
+                    android:background="@drawable/bt_sound_selector"/>
+
+                <ImageButton android:id="@+id/btn_share"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/bt_homepage_share_selector"
+                    android:background="@color/gray_bg"
+                    android:scaleType="fitCenter"/>
+
+            </LinearLayout>
+
+            <Button android:id="@+id/btn_feedback"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:background="@drawable/feedback_bg_selector"
+                android:textColor="@color/black_87"
+                android:text="意见反馈"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pic_startpage_logo_faceq"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="创造你的卡通形象!"
+            android:textSize="12sp"
+            android:textColor="@color/black_87"/>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center">
+
+            <ImageView android:id="@+id/btn_man"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:clickable="true"
+                android:src="@drawable/bt_man_selector"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:clickable="true"
+                android:src="@drawable/bt_woman_selector"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/btn_double_mode"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="8dp"
+            android:background="@drawable/btn_bg_selector"
+            android:clickable="true"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/btnfun_double_tag"
+                android:scaleType="fitCenter"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="双人模式"
+                android:textColor="@color/black_87"
+                android:textSize="12sp"
+                android:layout_marginLeft="16dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/btn_history_image"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="8dp"
+            android:background="@drawable/btn_bg_selector"
+            android:clickable="true"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/btnfun_history_tag"
+                android:scaleType="fitCenter"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="历史形象"
+                android:textColor="@color/black_87"
+                android:textSize="12sp"
+                android:layout_marginLeft="16dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/btn_new_product"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="8dp"
+            android:background="@drawable/btn_bg_selector_2"
+            android:clickable="true"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/btnfun_newproducts_tag"
+                android:scaleType="fitCenter"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="脸萌新品"
+                android:textColor="@color/black_87"
+                android:textSize="12sp"
+                android:layout_marginLeft="16dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton android:id="@+id/btn_join_us"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/pic_startpage_joinus"
+                android:background="@color/gray_bg"
+                android:scaleType="fitCenter"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/pic_startpage_aboutus"
+                android:layout_gravity="center"
+                android:background="@color/gray_bg"/>
+
+            <ImageButton android:id="@+id/btn_our_team"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/pic_startpage_team"
+                android:background="@color/gray_bg"
+                android:scaleType="fitCenter"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#000000"
+        android:layout_gravity="bottom"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="所有卡通版权归属于 &quot;"
+            android:textSize="10sp"
+            android:textColor="@color/white_100"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="15dp"
+            android:src="@drawable/pic_copyright_myotee"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="&quot; 所有"
+            android:textSize="10sp"
+            android:textColor="@color/white_100"/>
+
+    </LinearLayout>
+
+</LinearLayout>

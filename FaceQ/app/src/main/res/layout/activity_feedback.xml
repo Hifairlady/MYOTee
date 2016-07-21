@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black_87"
+        android:gravity="center_vertical"
+        android:padding="8dp">
+
+        <Button android:id="@+id/btn_back"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:text="返回"
+            android:background="@drawable/feedback_btn_selector"
+            android:textColor="@color/white_100"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户反馈"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            android:textAlignment="center"
+            android:textColor="@color/white_100"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/back_blue"
+        android:padding="8dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="联系方式"
+            android:textSize="16sp"
+            android:textColor="@color/white_100"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_chevron_right_black_24dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@drawable/umeng_fb_conversation_bg"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/black_87"
+        android:padding="8dp"
+        android:gravity="center">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:hint="我想说"
+            android:background="@color/white_100"/>
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:text="发送"
+            android:textSize="16sp"
+            android:background="@drawable/feedback_btn_selector"
+            android:textColor="@color/white_100"
+            android:layout_marginLeft="16dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
