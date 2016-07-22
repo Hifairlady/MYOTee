@@ -56,19 +56,7 @@ public class ImageGridAdapter extends BaseAdapter {
         imageView.setImageResource(imagesId.get(position));
         int padding = 20;
         imageView.setPadding(padding, padding, padding, padding);
-//        imageView.setBackground(mContext.getResources().getDrawable(R.drawable.grid_item_selector));
         return imageView;
-    }
-
-    private Bitmap convertViewToBitmap(View view) {
-//        view.measure(View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED),
-//                View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED));
-//        view.layout(0, 0, view.getMeasuredWidth(), view.getMeasuredHeight());
-        view.setDrawingCacheEnabled(true);
-        view.buildDrawingCache();
-        Bitmap bitmap = view.getDrawingCache();
-
-        return bitmap;
     }
 
 }

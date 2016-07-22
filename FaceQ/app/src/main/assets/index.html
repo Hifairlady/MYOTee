@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>开始编辑</title>
+	<!--script_file-->
+	<script src="lib/d3.v3.min.js"></script>
+	<script src="lib/zepto.min.js"></script>
+	<!--绘制bubble-->
+	<script src="js/dataparse.js"></script>
+	<script src="js/personchange.js"></script>
+	<!--数据导入-->
+	<script src="data/data.js"></script>
+	<!--css_file-->
+	<link href="css/reset.css" type="text/css" rel="stylesheet" />
+	<link href="css/edit.css" type="text/css" rel="stylesheet" />
+	<style>
+		.pathS{
+			fill-rule:evenodd;
+			clip-rule:evenodd;
+		}
+	</style>
+</head>
+<body>
+	<div id="contentDIV">
+	</div>
+<script>
+	var sexTag={id:0};
+	var faceTag={id:1,color:"#F4CDA7",x:0,y:0};
+	var eyebrowTag={id:29,x:0,y:0};
+	var eyeTag={id:5,x:0,y:0};
+	var hairTag={id:48,color:"#000",x:0,y:0};
+	var mouthTag={id:12,x:0,y:0};
+	var noseTag={id:0,x:0,y:0};
+
+	var svgWidth=640;
+	var svgHeight=640;
+	var winWidth=$(window).get(0).innerWidth;
+	var winHeight=$(window).get(0).innerHeight;
+	var minWidth=winWidth<winHeight?winWidth:winHeight;
+	var svg=d3.select("#contentDIV").append("svg").attr("xmlns","http://www.w3.org/2000/svg").attr("version","1.1").attr("id","contentSVG").attr("width",svgWidth).attr("height",svgHeight).attr("viewBox","0 0 "+svgWidth+" "+svgHeight).attr("xml:space","preserve");
+	var roleA=svg.append("g").attr("id","roleA");
+	var personSVG=roleA.append("g").attr("id","person");
+	var backHairSVG=personSVG.append("g").attr("id","backHairSVG");
+	var headSVG=personSVG.append("g").attr("id","head");
+	var backHair=backHairSVG.append("g").attr("id","backHair");
+	var middleHair=headSVG.append("g").attr("id","middleHair");
+	var face=headSVG.append("g").attr("id","face");
+	var facial=headSVG.append("g").attr("id","facial");
+	var eyebrow=facial.append("g").attr("id","eyebrow");
+	var mouth=facial.append("g").attr("id","mouth");
+	var eye=facial.append("g").attr("id","eye");
+	var nose=facial.append("g").attr("id","nose");
+	var frontHair=headSVG.append("g").attr("id","frontHair");
+
+	function initHeadEdit() {
+		resizeSVG();
+		faceChange(20000);
+		eyeChange(1);
+		eyebrowChange(1);
+		mouthChange(1);
+		hairChange(1);
+	}
+	function resizeSVG(){d3.select("#contentSVG").attr("width",$(window).get(0).innerWidth).attr("height",$(window).get(0).innerHeight)}
+    initHeadEdit();
+</script>	
+</body>
+</html>

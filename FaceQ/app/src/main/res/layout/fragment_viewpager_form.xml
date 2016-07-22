@@ -12,13 +12,6 @@
         android:layout_gravity="center"
         android:textColor="@color/black_87" />
 
-    <!--<ImageView-->
-        <!--android:layout_width="100dp"-->
-        <!--android:layout_height="100dp"-->
-        <!--android:src="@drawable/pic_s1_10"-->
-        <!--android:padding="28dp"-->
-        <!--android:scaleType="fitCenter"/>-->
-
     <GridView
         android:id="@+id/grid_items"
         android:layout_width="match_parent"
